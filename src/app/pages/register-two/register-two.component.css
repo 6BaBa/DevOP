@@ -1,0 +1,126 @@
+.register__content{
+    margin-top: 20vh;
+    text-align: center;
+
+}
+.register__title{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.head__one{
+    font-family: "neue-bold";
+  
+}
+
+.register__button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    width: 50%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.register__bottom{
+    width: 50%;
+    margin: auto;
+}
+
+.register__bottom p a{
+    color: var(--secondary-color)
+}
+
+.facebook__button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.google__button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    width: fit-content;
+    background: var(--primary-color);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.form{
+    width: 100%;
+    margin: 50px 0;
+
+}
+.btn__primaryTwo{
+    width: 100%;
+    margin-top: 20px;
+    height: 48px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+}
+.checkbox p{
+    text-align: left;
+}
+
+@media screen and (max-width: 810px){
+    .register__button{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+    }
+ 
+    .register__title{
+        width: 100%;
+    }
+   
+
+    .register__bottom {
+        width: 80%;
+      }
+
+  
+}
+
+
+@media screen and (max-width: 480px){
+    .register__button{
+        grid-template-columns: 1fr;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .register__title{
+        width: 100%;
+    }
+    .register__title h1 {
+        margin-bottom: 20px;
+
+    }
+
+      .register__content {
+        margin-top: 14vh;
+        text-align: center;
+      }
+
+    .head__one {
+        font-size: 28px;
+      } 
+}

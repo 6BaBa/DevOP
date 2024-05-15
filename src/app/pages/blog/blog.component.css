@@ -1,0 +1,40 @@
+.blog__content{
+    margin-top: 20vh;
+}
+
+.hero__two{
+    display: grid;
+    grid-template-columns: 1.5fr .2fr 2.2fr;
+    align-items: center;
+    grid-gap: 60px;
+}
+
+.hero__right{
+    width: 100%;
+}
+
+.hero__right img{
+    width: 100%;
+}
+
+.hero__left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero__title{
+    font-size: 30px;
+}
+.section__title{
+    font-family: 'neue-bold';
+    color: var(--global-color);
+}
+
+@media screen and (max-width: 768px){
+    .hero__two{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="register__one">
+  <div class="container">
+    <div class="register__content">
+      <div class="register__title">
+        <h1 class="head__one">
+          What’s your Purpose for using Service Connect?
+        </h1>
+        <p class="paragraph">
+          We’ll streamline your experience on Service Connect accordingly
+        </p>
+      </div>
+      <div class="register__button">
+        <div *ngFor="let card of cards">
+          <app-register-card [myCard]="card"></app-register-card>
+        </div>
+      </div>
+      <div class="register__bottom">
+        <p class="paragraph">
+          Already have an account? <a routerLink="/login"> Log in </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

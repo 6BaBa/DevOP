@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="home__main">
+  <div class="container">
+    <div class="home__hero">
+      <div class="hero__left">
+        <div class="head__body">
+            <h1 class="head__one">Welcome to </h1>
+            <h1 class='head__one'><span>Service Connect</span></h1>
+            <img src="../../../assets/curved-arrow.png" alt="" class="arrow" />
+        </div>
+        <p class="paragraph">
+          Are you skilled, looking for experts, job or to advertise your
+          buisness? Service Connect is the place for you.
+        </p>
+        <button class="btn__primary">
+          Learn More <i class="pi pi-arrow-right"></i>
+        </button>
+      </div>
+      <div class="hero__right">
+        <img src="../../../assets/hero-img.png" alt="" />
+      </div>
+    </div>
+    <app-search-card></app-search-card>
+    <div class="section">
+      <div class="section__title">Top Ads for You</div>
+      <div class="recent__ads">
+        <app-ad-card></app-ad-card>
+        <app-ad-card></app-ad-card>
+        <app-ad-card></app-ad-card>
+        <app-ad-card></app-ad-card>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section__title">Recent Ads</div>
+      <div class="recent__ads">
+        <app-ad-card></app-ad-card>
+        <app-ad-card></app-ad-card>
+        <app-ad-card></app-ad-card>
+        <app-ad-card></app-ad-card>
+      </div>
+    </div>
+    <div class="section">
+        <div class="advert">
+            <div class="advert__title">
+                Ready to Advertise?
+            </div>
+            <button class="advert__btn" routerLink="/register-one">
+                Sign up
+            </button>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,148 @@
+.home__main {
+  margin-top: 80px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #000; */
+}
+
+.head__body{
+    margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 40px;
+}
+.hero__left {
+  position: relative;
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.arrow {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  height: 40px;
+}
+
+.hero__right {
+  width: 63%;
+}
+
+.hero__right img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.advert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    padding: 50px 100px;
+    border-radius: 20px;
+    background-image: url(../../../assets/advert-bg.png);
+    background-size: 220vh;
+    background-position: center;
+    box-shadow: 0px 17px 40px rgba(22, 33, 242, 0.07);
+}
+
+.advert__title{
+    width: 30%;
+    color: var(--white);
+    font-size: clamp(30px, 2.5vw, 50px);
+    font-family: "neue-bold";
+    margin-bottom: 40px;
+}
+
+.advert__btn{
+    background: var(--white);
+    color: var(--primary-color);
+    font-size: 16px;
+    font-family: "neue-regular";
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    width: 139px;
+    height: 42px;
+}
+
+@media screen and (max-width: 810px){
+    .home__main {
+        margin-top: 140px;
+      }
+
+    .home__hero{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .hero__left, .hero__right{
+        width: 100%;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 38%;
+        left: 30%;
+        height: 34px;
+      }
+
+    .advert{
+        padding: 30px;
+        height: 100%;
+    }
+ 
+}
+
+
+
+@media screen and (max-width: 480px){
+    .home__main {
+        margin-top: 90px;
+      }
+
+    .home__hero{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .hero__left, .hero__right{
+        width: 100%;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 25%;
+        left: 36%;
+        height: 34px;
+      }
+
+    .advert{
+        padding: 30px;
+    }
+    .advert__title {
+        width: 100%;
+      }
+}
+
+
+   

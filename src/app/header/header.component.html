@@ -1,0 +1,45 @@
+<div class="header__main">
+    <div class="header__container">
+        <div class="header__left" routerLink="/home">
+            <img src="../../assets/logo.png" alt="">
+        </div>
+        <div class="header__mid">
+            <div class="links">
+                <a routerLink="/home" routerLinkActive="active"> Home</a>
+                <a routerLink="/search" routerLinkActive="active" > Ads</a>
+                <a routerLink="/job" routerLinkActive="active">Job</a>
+                <a routerLink="/about" routerLinkActive="active">About</a>
+                <a routerLink="/blog" routerLinkActive="active">Blog</a>
+            </div>
+        </div>
+        <div class="header__right">
+            <div class="buttons">
+                <a routerLink="/login">Login</a>
+                <button class="btn__primaryTwo" routerLink="/register-one">Sign up</button>
+            </div>
+        </div>
+        <div class="header__mobile" (click)="openMenu()">
+            <i class="pi pi-bars"></i>
+        </div>
+    </div>
+</div>
+
+<div [class]="active? 'header__mobileLinks': ' hidden'">
+    <div class="close" (click)="openMenu()">
+        <i class="pi pi-times"></i>
+    </div>
+    <div class="logo" routerLink="/home">
+        <img src="../../assets/logo.png" alt="">
+        <p class="paragraph">Service Connect</p>
+    </div>
+    <div class="mobile__link">
+        <div class="link">
+
+            <a routerLink="/home" routerLinkActive="active__mobile"> Home</a>
+            <a routerLink="/search" routerLinkActive="active__mobile" > Ads</a>
+            <a routerLink="/job" routerLinkActive="active__mobile">Job</a>
+            <a routerLink="/about" routerLinkActive="active__mobile">About</a>
+            <a routerLink="/blog" routerLinkActive="active__mobile">Blog</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+.register__content{
+    margin-top: 20vh;
+    text-align: center;
+
+}
+.register__title{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.head__one{
+    font-family: "neue-bold";
+  
+}
+
+.register__button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    width: 50%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.register__bottom{
+    width: 50%;
+    margin: auto;
+}
+
+.register__bottom p a{
+    color: var(--secondary-color)
+}
+
+.facebook__button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.google__button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.google__button:hover, .facebook__button:hover{
+    background: var(--blue-bg);
+    border: 1px solid var(--blue-bg);
+    color: var(--white);
+}
+
+
+.form{
+    width: 100%;
+    margin: 50px 0;
+
+}
+.btn__primaryTwo{
+    width: 100%;
+    margin-top: 20px;
+    height: 48px;
+}
+
+@media screen and (max-width: 810px){
+
+      .register__button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .register__bottom {
+        width: 70%;
+      }
+      
+}
+
+
+
+@media screen and (max-width: 480px){
+    .register__title {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+      }
+      .register__button{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .register__bottom {
+        width: 100%;
+        margin: auto;
+      }
+
+      .head__one {
+        font-size: 28px;
+      }
+}
